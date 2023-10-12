@@ -1,0 +1,9 @@
+[submodule "config/nvim"]
+	path = config/nvim
+	url = https://github.com/axemanofic/nvchad-config.git
+[submodule "config/alacritty"]
+	path = config/alacritty
+	url = https://github.com/axemanofic/alacritty-config.git
+[submodule "config/tmux"]
+	path = config/tmux
+	url = https://github.com/axemanofic/.tmux.git

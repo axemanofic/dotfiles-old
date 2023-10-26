@@ -4,6 +4,9 @@
 [submodule "config/alacritty"]
 	path = config/alacritty
 	url = https://github.com/axemanofic/alacritty-config.git
+[submodule "config/oh_my_tmux"]
+	path = config/oh_my_tmux
+	url = https://github.com/gpakosz/.tmux.git
 [submodule "config/tmux"]
 	path = config/tmux
-	url = https://github.com/axemanofic/.tmux.git
+	url = https://github.com/axemanofic/tmux-config.git

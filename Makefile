@@ -8,6 +8,9 @@ terminal_sync:
 nvim_sync:
 	rm -rf ~/.config/nvim/lua/custom
 	ln -s ~/.dotfiles/config/nvim/custom ~/.config/nvim/lua/custom
+ranger_sync:
+	rm -rf ~/.config/ranger/rc.conf
+	ln -s ~/.dotfiles/config/ranger/rc.conf ~/.config/ranger/rc.conf
 
-.PHONY: init tmux_sync terminal_sync nvim_sync
+.PHONY: init tmux_sync terminal_sync nvim_sync ranger_sync
 

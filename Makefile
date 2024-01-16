@@ -3,8 +3,8 @@ init:
 tmux_sync:
 	cp ~/.dotfiles/config/tmux/tmux.conf.local ~/.config/tmux/tmux.conf.local
 terminal_sync:
-	rm -rf ~/.config/alacritty/alacritty.yml
-	ln -s ~/.dotfiles/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+	rm -rf ~/.config/alacritty/alacritty.toml
+	ln -s ~/.dotfiles/config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 nvim_sync:
 	rm -rf ~/.config/nvim/lua/custom
 	ln -s ~/.dotfiles/config/nvim/custom ~/.config/nvim/lua/custom

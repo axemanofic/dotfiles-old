@@ -12,6 +12,10 @@ nvim_sync:
 ranger_sync:
 	rm -rf ~/.config/ranger/rc.conf
 	ln -s ~/.dotfiles/config/ranger/rc.conf ~/.config/ranger/rc.conf
+zsh_sync:
+	# themes
+	rm -rf ~/.oh-my-zsh/themes/dracula.zsh-theme
+	ln -s ./config/oh_my_zsh_themes/dracula/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
 
-.PHONY: init tmux_sync terminal_sync nvim_sync ranger_sync
+.PHONY: init tmux_sync terminal_sync nvim_sync ranger_sync zsh_sync
 

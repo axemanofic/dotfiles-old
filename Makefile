@@ -5,6 +5,7 @@ tmux_sync:
 terminal_sync:
 	rm -rf ~/.config/alacritty/alacritty.toml
 	ln -s ~/.dotfiles/config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+	cp -r ~/.dotfiles/config/alacritty/themes ~/.config/alacritty/themes
 nvim_sync:
 	rm -rf ~/.config/nvim/lua/custom
 	ln -s ~/.dotfiles/config/nvim/custom ~/.config/nvim/lua/custom

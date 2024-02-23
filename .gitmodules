@@ -13,6 +13,9 @@
 [submodule "config/ranger"]
 	path = config/ranger
 	url = https://github.com/axemanofic/ranger-config.git
-[submodule "config/oh_my_zsh_themes/dracula"]
-	path = config/oh_my_zsh_themes/dracula
+[submodule "config/oh_my_zsh/plugins/zsh-autosuggestions"]
+	path = config/oh_my_zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "config/oh_my_zsh/themes/dracula"]
+	path = config/oh_my_zsh/themes/dracula
 	url = https://github.com/dracula/zsh.git

@@ -16,8 +16,9 @@ ZSH_CUSTOM=~/.oh-my-zsh/custom
 init:
 	cd ~
 	mkdir -p ${TMUX_CONFIG}
-	ln -s ${TMUX_OH_MY_TMUX}/.tmux.conf ${TMUX_CONFIG}/tmux.conf
 tmux_sync:
+	rm -rf ${TMUX_CONFIG}/tmux.conf
+	ln -s  ${TMUX_OH_MY_TMUX}/.tmux.conf ${TMUX_CONFIG}/tmux.conf
 	cp ${TMUX_DOTFILES}/tmux.conf.local ${TMUX_CONFIG}/tmux.conf.local
 terminal_sync:
 	rm -rf ${TERMINAL_CONFIG}/alacritty.toml

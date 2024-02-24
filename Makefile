@@ -2,6 +2,7 @@
 TMUX_OH_MY_TMUX=~/.dotfiles/config/oh_my_tmux
 TMUX_DOTFILES=~/.dotfiles/config/tmux
 TMUX_CONFIG=~/.config/tmux
+# HOME
 # TERMINAL
 TERMINAL_DOTFILES=~/.dotfiles/config/alacritty
 TERMINAL_CONFIG=~/.config/alacritty
@@ -9,7 +10,7 @@ TERMINAL_CONFIG=~/.config/alacritty
 NVIM_DOTFILES=~/.dotfiles/config/nvim/custom
 NVIM_CUSTOM=~/.config/nvim/lua/custom
 # ZSH
-ZSH_DOTFILES=~/.dotfiles/config/oh_my_zsh
+ZSH_DOTFILES=~/.dotfiles/config/zsh
 ZSH_CUSTOM=~/.oh-my-zsh/custom
 
 init:
@@ -29,12 +30,13 @@ ranger_sync:
 	rm -rf ~/.config/ranger/rc.conf
 	ln -s ~/.dotfiles/config/ranger/rc.conf ~/.config/ranger/rc.conf
 zsh_sync:
-	# themes
-	rm -rf ${ZSH_CUSTOM}/themes/dracula.zsh-theme 
-	ln -s  ${ZSH_DOTFILES}/themes/dracula/dracula.zsh-theme ${ZSH_CUSTOM}/themes/dracula.zsh-theme
-	# plugins
-	rm -rf ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
-	ln -s  ${ZSH_DOTFILES}/plugins/zsh-autosuggestions ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
+	# custom
+	rm -rf ${ZSH_CUSTOM}
+	ln -s ${ZSH_DOTFILES}/custom ${ZSH_CUSTOM}
+	# zshrc
+	rm -rf ~/.zshrc
+	ln -s  ${ZSH_DOTFILES}/zshrc ~/.zshrc
+
 
 .PHONY: init tmux_sync terminal_sync nvim_sync ranger_sync zsh_sync
 

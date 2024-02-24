@@ -18,7 +18,7 @@ init:
 	mkdir -p ${TMUX_CONFIG}
 	ln -s ${TMUX_OH_MY_TMUX}/.tmux.conf ${TMUX_CONFIG}/tmux.conf
 tmux_sync:
-	cp ${TERMINAL_DOTFILES}/tmux.conf.local ${TMUX_CONFIG}/tmux.conf.local
+	cp ${TMUX_DOTFILES}/tmux.conf.local ${TMUX_CONFIG}/tmux.conf.local
 terminal_sync:
 	rm -rf ${TERMINAL_CONFIG}/alacritty.toml
 	ln -s  ${TERMINAL_DOTFILES}/alacritty.toml ${TERMINAL_CONFIG}/alacritty.toml

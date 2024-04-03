@@ -12,6 +12,9 @@ NVIM_CUSTOM=~/.config/nvim/lua/custom
 # ZSH
 ZSH_DOTFILES=~/.dotfiles/config/zsh
 ZSH_CUSTOM=~/.oh-my-zsh/custom
+# GIT
+GIT_DOTFILES=~/.dotfiles/config/gitconfig
+GIT_CONFIG=~/.gitconfig
 
 init:
 	cd ~
@@ -33,10 +36,14 @@ ranger_sync:
 zsh_sync:
 	# custom
 	rm -rf ${ZSH_CUSTOM}
-	ln -s ${ZSH_DOTFILES}/custom ${ZSH_CUSTOM}
+	cp -r ${ZSH_DOTFILES}/custom ${ZSH_CUSTOM}
 	# zshrc
 	rm -rf ~/.zshrc
 	ln -s  ${ZSH_DOTFILES}/zshrc ~/.zshrc
+git_sync:
+	rm -rf ${GIT_CONFIG}
+	ln -s ${GIT_DOTFILES} ${GIT_CONFIG}
+
 
 
 .PHONY: init tmux_sync terminal_sync nvim_sync ranger_sync zsh_sync

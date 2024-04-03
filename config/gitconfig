@@ -1,0 +1,26 @@
+[user]
+	email = axeman.ofic@gmail.com
+	name = Roman Sotnikov
+[pull]
+	rebase = false
+[init]
+	defaultBranch = master
+[commit]
+  verbose = true
+[diff]
+  algorithm = histogram
+  submodule = log
+[status]
+  submoduleSummary = true
+[submodule]
+  recurse = true
+[push]
+	autoSetupRemote = true
+[credential]
+	helper = store
+[branch]
+  sort = -committerdate
+[core]
+  editor = vi
+[log]
+  date = iso

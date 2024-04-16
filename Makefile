@@ -7,8 +7,8 @@ TMUX_CONFIG=~/.config/tmux
 TERMINAL_DOTFILES=~/.dotfiles/config/alacritty
 TERMINAL_CONFIG=~/.config/alacritty
 # NVIM
-NVIM_DOTFILES=~/.dotfiles/config/nvim/custom
-NVIM_CUSTOM=~/.config/nvim/lua/custom
+NVIM_DOTFILES=~/.dotfiles/config/nvim
+NVIM_CONFIG=~/.config/nvim
 # ZSH
 ZSH_DOTFILES=~/.dotfiles/config/zsh
 ZSH_CUSTOM=~/.oh-my-zsh/custom
@@ -28,8 +28,8 @@ terminal_sync:
 	ln -s  ${TERMINAL_DOTFILES}/alacritty.toml ${TERMINAL_CONFIG}/alacritty.toml
 	cp -r  ${TERMINAL_DOTFILES}/themes ${TERMINAL_CONFIG}/themes
 nvim_sync:
-	rm -rf ${NVIM_CUSTOM}
-	ln -s  ${NVIM_DOTFILES} ${NVIM_CUSTOM}
+	rm -rf ${NVIM_CONFIG}
+	ln -s  ${NVIM_DOTFILES} ${NVIM_CONFIG}
 ranger_sync:
 	rm -rf ~/.config/ranger/rc.conf
 	ln -s ~/.dotfiles/config/ranger/rc.conf ~/.config/ranger/rc.conf
